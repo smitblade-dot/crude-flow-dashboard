@@ -1,21 +1,24 @@
-# Updating your site with today's changes (2026-09-16)
+# Updating your site with this round's changes (2026-09-16)
 
-Your automation is already set up and running daily — nothing to reconfigure. This is just a content update: five new/improved features, plus a data correction.
+Your hourly automation is untouched by this update — don't change anything about the GitHub Action or the token. This is a pure UI/UX polish pass: same data schema, same `data.json`, just a nicer `index.html`. Only one file changes.
 
 ## What's new
 
-1. **Hotspots tab** — cropped mini-maps for each region with an active disruption (Middle East, Russia, South America right now), instead of trying to read clusters off the single crowded global map.
-2. **Changes tab** — a day/week/month log of what actually changed and when, with sources and confidence tags on every entry.
-3. **Tenders tab** — who's buying crude right now, what they're switching from, and (where disclosed) volumes — e.g. Orlen's post-Petroline diversification and India's resumed Russian purchases.
-4. **Clarified Cargo Substitution & Destinations tabs** — added a plain-language "In short" explainer to each, and cross-referenced them against the new Tenders tab so the difference between the three is clear.
-5. **Corrected the Saudi East-West Pipeline (Petroline) status** — it was showing "elevated utilisation" (Amber) when it had actually been shut down 13 Sep 2026 by a drone attack. Now shows Red/shut down, with a new disruption entry and a HIGH-confidence flow figure.
-
-There's also an honest answer built into the Data & Method tab on the AIS/tanker-tracking question: genuine free vessel-tracking data isn't achievable here (every route is either paid, requires your own receiver hardware, or isn't structured data) — so the Changes tab is the transparent substitute rather than a fabricated "AIS-derived" figure.
+1. **Hotspots tab is much lighter.** It was re-embedding the full world map outline once per region card; now every map (main + hotspots) references one shared shape, so the page is smaller and the tab opens faster.
+2. **Zoom & pan on the main map.** Scroll/pinch to zoom, drag to pan, plus +/−/reset buttons in the map toolbar.
+3. **Hover tooltips.** Hovering a route or marker shows a floating label instead of relying on the browser's slow native tooltip.
+4. **Global search.** The box in the header searches routes, disruptions, tenders and substitution events at once and jumps you straight to the result.
+5. **Shareable links.** Switching tabs (and opening a route's detail panel) now updates the URL, so you can copy/paste a link straight to a specific tab or route.
+6. **CSV export.** The Routes, Disruptions and Tenders tabs each got an "Export CSV" button.
+7. **Print / Save as PDF.** A printer icon in the header gives you a clean, chrome-free printout of whichever tab is open.
+8. **"Biggest movers this week"** strip on the Overview tab, built from the week-over-week change already in your data.
+9. **Recent history + a small trend line** in each route's detail panel, pulling from the Changes log — honestly empty until entries build up over time, not fabricated.
+10. **Mobile: bottom tab bar** and bigger touch targets on phones, instead of a cramped top scroller.
 
 ## What to do
 
 1. In your `crude-flow-dashboard` repo on GitHub, click **Add file → Upload files**.
-2. Drag in `index.html`, `data.json`, and `CLAUDE.md` from this bundle — they replace the versions already there. (`manifest.json`, `service-worker.js`, `icons/`, and the `.github/workflows/` folder are unchanged this round — you can upload them too, GitHub will just say there's nothing to change.)
+2. Drag in `index.html` from this bundle — it replaces the version already there.
 3. Commit.
 
-That's it — your daily automation will keep working exactly as before, now also maintaining the new `tenders` and `change_log` data as it runs.
+That's it. `data.json`, `manifest.json`, `service-worker.js`, the icons and the GitHub Action are all unchanged this round — nothing else to touch, and your hourly refresh keeps running exactly as before.
