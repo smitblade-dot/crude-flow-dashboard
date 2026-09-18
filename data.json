@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Global Crude Flow Intelligence Dashboard",
-    "week_ending": "2026-09-13",
+    "week_ending": "2026-09-20",
     "cutoff": "09:00 Europe/Nicosia",
     "week_convention": "Weeks run Monday-Sunday; week_ending is always the Sunday, with data captured up to the 09:00 Europe/Nicosia (Cyprus time) cutoff that Sunday morning.",
-    "generated": "2026-09-16T14:23:08Z",
+    "generated": "2026-09-18T07:44:35Z",
     "note": "Built from free/public sources (EIA, IEA, OPEC, operator statements, Reuters/Al Jazeera/Bloomberg/OilPrice/Argus/Kpler-cited reporting) plus a seed route database. No live Kpler/Vortexa feed is connected in this build; flow figures are research snapshots, not real-time AIS-derived data. See each item's confidence tag and source."
   },
   "countries": [
@@ -1567,10 +1567,10 @@
       "destination_terminal": "Yanbu",
       "destination_basin": "Europe / Red Sea / Atlantic",
       "mode": "Pipeline + tanker",
-      "capacity": "~5 mb/d recent flow; ~7 mb/d design",
-      "status": "Shut down — drone attack 13 Sep 2026 (Maysan, Iraq-launched); repairs underway",
+      "capacity": "~5 mb/d recent flow; ~7 mb/d design (7 mb/d nameplate confirmed by multiple sources)",
+      "status": "Shut down — drone attack 10-11 Sep 2026 hit Pump Stations 8 & 9 (Maysan, Iraq-launched); Yanbu loadings suspended 15 Sep; partial bypass targeted within days, full repair 5-6 weeks",
       "map_status": "Red",
-      "watch_item": "Was critical Hormuz bypass; now itself the disruption. Watch Yanbu/Red Sea storage buffer and repair timeline.",
+      "watch_item": "Was critical Hormuz bypass; now itself the disruption. Saudi Arabia compensating via increased Hormuz loadings and ship-to-ship transfers near Sohar, Oman. Watch Yanbu storage buffer, repair progress, and European cargo cancellations.",
       "latitude": 24.09,
       "longitude": 38.06,
       "origin_lat": 25.5,
@@ -1588,9 +1588,9 @@
       "destination_basin": "Asia / Gulf / Europe",
       "mode": "Pipeline + tanker",
       "capacity": "Multi-million b/d",
-      "status": "Normal",
-      "map_status": "Green",
-      "watch_item": "Hormuz exposure",
+      "status": "Elevated utilisation — absorbing Petroline shutdown via increased Hormuz loadings and STS transfers near Sohar, Oman",
+      "map_status": "Amber",
+      "watch_item": "Hormuz exposure; now also the primary compensation route for the Petroline outage. Tanker rates near Hormuz reported at ~$1M/day.",
       "latitude": 26.65,
       "longitude": 50.1,
       "origin_lat": 25.5,
@@ -2094,10 +2094,10 @@
       "change_mbd": null,
       "change_percent": null,
       "status": "Normal - multi-year high",
-      "event_explanation": "NOC reported ~41.7 million barrels produced in July 2026 (~1.35 mb/d); production and exports at a 12-13 year high, NOC targeting full recovery by end-2026.",
+      "event_explanation": "NOC reported ~41.7 million barrels produced in July 2026 (~1.35 mb/d); production and exports at a 12-13 year high, NOC targeting full recovery by end-2026. Brief mid-September disruption: Petroleum Facilities Guard members shut the Hamada-Zawiya pipeline valve and halted Hamada/Tahara field output (~9-15 Sep) in a dispute over transferring the Guard from the defense ministry to NOC control, with NOC threatening force majeure; operations at the affected fields resumed within days and NOC does not expect further disruption, so the multi-year-high figure above is not revised.",
       "confidence": "HIGH",
-      "source": "Libya Observer; North Africa Post (NOC monthly reports)",
-      "source_date": "2026-07"
+      "source": "Libya Observer; North Africa Post (NOC monthly reports); OilPrice.com (15 Sep 2026)",
+      "source_date": "2026-09-15"
     },
     {
       "flow_id": 9,
@@ -2178,10 +2178,31 @@
       "change_mbd": -5.0,
       "change_percent": -100.0,
       "status": "Shut down — drone attack, repairs underway",
-      "event_explanation": "Pipeline shut down 13 Sep 2026 after a drone attack hit two points near Riyadh and Medina; drones traced to Maysan province, Iraq (Iranian-aligned militants). This was Saudi Arabia's primary Hormuz-bypass route (~5 mb/d recent flow, ~7 mb/d nameplate), so the shutdown compounds the ongoing Hormuz crisis rather than relieving it. Yanbu holds an estimated 5-7 days of storage buffer, plus reserves at Egypt's Ain Sukhna/Sidi Kerir, so some loadings may continue briefly from stock even with the pipeline down. Reuters sources indicate repairs could take 5-6 weeks; other reporting suggests a faster timeline. Treat mbd as 0 (pipeline flow) rather than terminal throughput, which may lag via stored buffer.",
+      "event_explanation": "Pipeline shut down 10-11 Sep 2026 after drone strikes hit Pump Stations 8 and 9 (~68 miles SE of Medina, ~30-acre burn scar, one complex burning 13+ hours); drones launched from Maysan province, Iraq (Iranian-aligned militants). This was Saudi Arabia's primary Hormuz-bypass route (~5 mb/d recent flow, ~7 mb/d nameplate), so the shutdown compounds the ongoing Hormuz crisis rather than relieving it. Aramco then suspended Yanbu crude loadings outright on 15 Sep and cancelled/delayed at least 3 European refiners' late-September cargoes (some pushed to November); every Aramco cargo for the last 10 days of September was reported at risk. Repair timeline estimates diverge sharply: Aramco/Bloomberg sources cite restoring ~half capacity within days via a bypass around the damaged section, with full capacity in ~5-6 weeks (matching separate Reuters sourcing and AP-sourced regional officials' \"3-5 weeks\"); US Energy Secretary Chris Wright called it \"days\"; satellite-imagery analysts argue the damage could take months. Saudi Arabia is compensating by increasing loadings through the Strait of Hormuz (incl. ship-to-ship transfers near Sohar, Oman) rather than restoring pipeline flow — Aramco reportedly sold ~20 million barrels to Asian refiners this week for lifting outside Hormuz. Treat mbd as 0 (pipeline flow) rather than terminal throughput, which may lag via stored buffer/rerouting.",
       "confidence": "HIGH",
-      "source": "Al Jazeera (14 Sep 2026); CNN (14 Sep 2026); Wikipedia: 2026 East-West Crude Oil Pipeline attack",
-      "source_date": "2026-09-14"
+      "source": "Wikipedia: 2026 East-West Crude Oil Pipeline attack; AP via PBS NewsHour; Engineering News-Record; Bloomberg; OilPrice.com; Al Jazeera (17 Sep 2026)",
+      "source_date": "2026-09-17"
+    },
+    {
+      "flow_id": 12,
+      "week_ending": "2026-09-20",
+      "region": "Middle East",
+      "country": "Saudi Arabia",
+      "route": "Total Saudi crude loadings (all export routes combined)",
+      "terminal": "Multiple (Ras Tanura/Ju'aymah, Yanbu, Sohar STS)",
+      "destination_region": "Asia / Europe / global",
+      "destination_country": null,
+      "crude_grade": "Arab Light/Medium/Heavy",
+      "mbd": 2.2,
+      "cargo_count": null,
+      "previous_week_mbd": 7.5,
+      "change_mbd": -5.3,
+      "change_percent": -70.7,
+      "status": "Severely reduced — compensating via Hormuz",
+      "event_explanation": "Al Jazeera analysis: total Saudi crude loadings fell from ~7.5 mb/d in Jan-Feb 2026 to an estimated ~2.1-2.3 mb/d by mid-September 2026 (a >70% decline), as both the Strait of Hormuz crisis and the Petroline/Yanbu shutdown compound. Analysts expect Hormuz-route exports specifically to exceed 2 mb/d by mid-September as Saudi Arabia shifts volume there (incl. STS transfers near Sohar, Oman) to offset the pipeline outage. This is a single-source analyst estimate, not an official Aramco/ministry figure — treat as directional pending corroboration.",
+      "confidence": "LOW-MEDIUM",
+      "source": "Al Jazeera (17 Sep 2026)",
+      "source_date": "2026-09-17"
     },
     {
       "flow_id": 2,
@@ -2319,13 +2340,13 @@
       "location": "Strait of Hormuz",
       "event_type": "Military conflict / blockade",
       "estimated_capacity_affected": "~20 mb/d normal transit (~25% of global seaborne oil)",
-      "actual_flow_affected": "~90% reduction in tanker traffic; 10-day average ~13 vessels/day (Kpler) vs pre-war norm",
+      "actual_flow_affected": "~90% reduction in tanker traffic; Kpler counted just 7 transits on 10 Sep 2026 (down from 11 the day before)",
       "start_date": "2026-02-28",
       "expected_restart": "Unresolved",
       "actual_restart": null,
       "status": "Critical / ongoing",
-      "description": "\"2026 Strait of Hormuz crisis\": US/Israel strikes on Iran (Operation Epic Fury, 28 Feb 2026) triggered Iranian closure of the strait, ship boardings and mining. Ceasefire (8 Apr) failed; US naval blockade of Iranian ports (13 Apr-29 May); further escalation 5-6 Sept 2026 (US struck 3 Iranian tankers, Iran fired missiles at US warships). Brent spiked to $126 in March, back to $96.28 on 6 Sept 2026. Saudi Arabia (-20%), Iraq (-70% at peak), Kuwait, Qatar, UAE and Iran all hit. Bypass routes (Saudi East-West/Yanbu, UAE Habshan-Fujairah, Iraq Kirkuk-Ceyhan) together carry only ~9 mb/d vs the ~20 mb/d the strait normally carries.",
-      "source": "Wikipedia: 2026 Strait of Hormuz crisis; Al Jazeera (6-7 Sep 2026)",
+      "description": "\"2026 Strait of Hormuz crisis\": US/Israel strikes on Iran (Operation Epic Fury, 28 Feb 2026) triggered Iranian closure of the strait, ship boardings and mining. Ceasefire (8 Apr) failed; US naval blockade of Iranian ports (13 Apr-29 May); further escalation 5-6 Sept 2026 (US struck 3 Iranian tankers, Iran fired missiles at US warships). Brent spiked to $126 in March, to $96.28 on 6 Sept, then to $104.61 on 11 Sept (+8.7% week) as the Petroline shutdown (see disruption #6) compounded the crisis, and briefly to ~$108 on 15 Sept when Aramco suspended Yanbu loadings outright; prices eased somewhat by 17 Sept as Saudi Arabia shifted more volume through Hormuz. Saudi Arabia (-20% initially, now much deeper per disruption #6), Iraq (-70% at peak), Kuwait, Qatar, UAE and Iran all hit. Bypass routes (Saudi East-West/Yanbu, UAE Habshan-Fujairah, Iraq Kirkuk-Ceyhan) together carry only ~9 mb/d vs the ~20 mb/d the strait normally carries — and the Saudi bypass itself is now down (disruption #6). A planned Iran-Oman-GCC meeting to discuss a temporary Hormuz transit solution was postponed indefinitely as of 14 Sept with no new date set. The Persian Gulf Strait Authority (Iran) published an updated 14 Sept list of vessels it deems in violation of its transit protocols, threatening fines, detention or confiscation, and US forces have narrowed air-defence escort cover for tankers to two time slots a day.",
+      "source": "Wikipedia: 2026 Strait of Hormuz crisis; Al Jazeera (6-7 Sep, 14 Sep, 17 Sep 2026); CNBC (16-17 Sep 2026); OilPrice.com (15 Sep 2026)",
       "confidence": "HIGH"
     },
     {
@@ -2401,17 +2422,34 @@
       "date": "2026-09-16",
       "country": "Saudi Arabia",
       "asset": "East-West Pipeline / Petroline",
-      "location": "Two attack points near Riyadh and Medina; pipeline runs Eastern Province → Yanbu",
+      "location": "Pump Stations 8 and 9, ~68 miles SE of Medina; pipeline runs Eastern Province → Yanbu",
       "event_type": "Drone attack / pipeline shutdown",
       "estimated_capacity_affected": "~5 mb/d recent flow (~7 mb/d nameplate); ~4-5% of global oil supply",
-      "actual_flow_affected": "Pipeline shut down; Yanbu drawing on an estimated 5-7 days of storage buffer plus Egypt (Ain Sukhna/Sidi Kerir) reserves in the meantime",
-      "start_date": "2026-09-13",
-      "expected_restart": "Reuters sources: 5-6 weeks; other reporting suggests faster — unconfirmed",
+      "actual_flow_affected": "Pipeline shut down; Yanbu loadings suspended outright 15 Sep; at least 3 European refiners' late-Sept cargoes cancelled/pushed to November; Saudi Arabia compensating via increased Hormuz loadings and STS transfers near Sohar, Oman (~20 million barrels reportedly sold to Asian refiners this week for lifting outside Hormuz)",
+      "start_date": "2026-09-11",
+      "expected_restart": "Diverging estimates: Aramco/Bloomberg — partial (~half capacity) bypass within days, full capacity ~5-6 weeks; AP-sourced regional officials — 3-5 weeks; US Energy Secretary Chris Wright — \"days\"; satellite-imagery analysts — potentially months. Unconfirmed officially by Aramco.",
       "actual_restart": null,
-      "status": "Critical / ongoing",
-      "description": "Drone attack on 13 Sep 2026 hit the East-West Pipeline (Petroline) at two points near Riyadh and Medina, forcing a shutdown. Drones were traced to Maysan province, Iraq, launched by Iranian-aligned militants. Petroline is Saudi Arabia's primary bypass route around the Strait of Hormuz (see disruption #1), carrying oil from the Eastern Province to the Red Sea export terminal at Yanbu — so this shutdown compounds the existing Hormuz crisis rather than offering relief from it, removing one of the few working bypass corridors. This is distinct from the Hormuz crisis itself: it is a direct attack on Saudi domestic export infrastructure, not a transit blockade.",
-      "source": "Al Jazeera (14 Sep 2026); CNN (14 Sep 2026); Wikipedia: 2026 East-West Crude Oil Pipeline attack",
+      "status": "Critical / ongoing — partial bypass/restoration efforts underway, no confirmed restart yet",
+      "description": "Drone strikes on 10-11 Sep 2026 hit Pump Stations 8 and 9 of the East-West Pipeline (Petroline), causing fires (one complex burned 13+ hours, leaving a ~30-acre burn scar) and forcing a full shutdown on 11 Sep. Drones were traced to Maysan province, Iraq, launched by Iranian-aligned militants; Aramco has not detailed the exact equipment damaged. Petroline is Saudi Arabia's primary bypass route around the Strait of Hormuz (see disruption #1), carrying oil from the Eastern Province to the Red Sea export terminal at Yanbu — so this shutdown compounds the existing Hormuz crisis rather than offering relief from it, removing one of the few working bypass corridors. Aramco subsequently suspended Yanbu loadings outright (15 Sep) and cancelled/delayed European term cargoes, with every Aramco cargo for the last 10 days of September reported at risk (hitting PKN Orlen especially hard, ~40% of whose crude is Aramco-sourced). Rather than restoring pipeline flow, Saudi Arabia is compensating by routing more crude through the Strait of Hormuz itself, including ship-to-ship transfers near Sohar, Oman, reportedly with US military assistance — though this faces its own constraints (tanker rates near $1 million/day). This is distinct from the Hormuz crisis itself: it is a direct attack on Saudi domestic export infrastructure, not a transit blockade.",
+      "source": "Wikipedia: 2026 East-West Crude Oil Pipeline attack; AP via PBS NewsHour; Engineering News-Record; Bloomberg (14-16 Sep 2026); OilPrice.com (15-16 Sep 2026); Al Jazeera (17 Sep 2026); CNBC (15-17 Sep 2026)",
       "confidence": "HIGH"
+    },
+    {
+      "disruption_id": 7,
+      "date": "2026-09-15",
+      "country": "Libya",
+      "asset": "Hamada-Zawiya crude pipeline / Hamada & Tahara fields",
+      "location": "Western Libya (Hamada-Zawiya pipeline and associated fields)",
+      "event_type": "Security force labour dispute / pipeline valve shutdown",
+      "estimated_capacity_affected": "Not disclosed at field level; Libya's total production is ~1.4 mb/d",
+      "actual_flow_affected": "Hamada and Tahara fields fully halted and Hamada-Zawiya pipeline valve closed for several days; partial cuts threatened at Wafa, Al-Khamsa and El Feel if demands unmet",
+      "start_date": "2026-09-10",
+      "expected_restart": "Resumed within days",
+      "actual_restart": "2026-09-15",
+      "status": "Resolved",
+      "description": "Members of Libya's Petroleum Facilities Guard shut a valve on the Hamada-Zawiya crude pipeline and halted output at the Hamada and Tahara fields (~9-10 Sep 2026), demanding the Guard be transferred financially and administratively from the defense ministry to the National Oil Corporation. NOC threatened to declare force majeure and warned of a full shutdown across additional fields (Wafa, Al-Khamsa, El Feel) if the valve was not reopened. Operations at the affected fields resumed within days and NOC does not anticipate further disruption; this reflects a recurring pattern of armed factions using oil infrastructure as leverage since 2011. Reported alongside the Saudi Petroline outage as a factor in a >$3 oil price jump around 15 Sep 2026.",
+      "source": "OilPrice.com (15 Sep 2026); GV Wire (15 Sep 2026)",
+      "confidence": "MEDIUM"
     }
   ],
   "cargo_substitution": [
@@ -2450,6 +2488,24 @@
       "replacement_buyer": "Chevron / US Gulf Coast refiners resuming direct lift",
       "confidence": "LOW-MEDIUM",
       "sources": "Morgan Lewis; CNBC - this is a supply-reopening story rather than a substitution between two different origin countries."
+    },
+    {
+      "substitution_id": 3,
+      "date": "2026-09-17",
+      "original_seller": "Saudi Arabia (Saudi Aramco)",
+      "original_crude": "Arab Light / Medium",
+      "original_volume": "At least 3 European refiners' late-September term cargoes cancelled or pushed to November; every Aramco cargo for the last 10 days of September reported at risk",
+      "original_buyer": "European term refiners, including PKN Orlen (~40% of Orlen's crude is Aramco-sourced)",
+      "original_refinery": null,
+      "original_loading_point": "Yanbu (via East-West Pipeline / Petroline)",
+      "disruption": "East-West Pipeline (Petroline) shutdown and subsequent Yanbu loadings suspension, 11-15 Sep 2026 (see disruption #6)",
+      "replacement_country": "North Sea (Norway/UK), United States, West Africa",
+      "replacement_crude": "North Sea grades (Grane, Johan Sverdrup, Johan Castberg), WTI Midland, West African grades",
+      "replacement_volume": "Not disclosed at cargo level",
+      "replacement_loading_point": "Multiple (North Sea terminals, US Gulf Coast, West African terminals)",
+      "replacement_buyer": "European refiners, including PKN Orlen",
+      "confidence": "MEDIUM",
+      "sources": "Argus (cited by OilPrice.com, BOE Report, Türkiye Today, Greek City Times); Al-Monitor; Bloomberg (14-16 Sep 2026) - cargo cancellations confirmed by multiple outlets citing market sources, but replacement volumes not disclosed."
     }
   ],
   "tenders": [
@@ -2484,6 +2540,22 @@
       "source": "Deccan Herald (Sep 2026)",
       "source_date": "2026-09-14",
       "note": "Headline-level only — source did not yield full article detail on volumes or discount amount. Included as a directional data point, not a precise figure."
+    },
+    {
+      "tender_id": 3,
+      "date": "2026-09-15",
+      "buyer": "PKN Orlen and at least 2 other unnamed European refiners",
+      "buyer_country": "Poland / Europe",
+      "volume": "Not disclosed",
+      "crude_grade": "Arab Light / Medium",
+      "origin_country": "Saudi Arabia (cancelled/delayed, not purchased)",
+      "origin_previous": "Term contract — Aramco supplies ~40% of Orlen's crude",
+      "price_basis": "Not disclosed",
+      "status": "Late-September cargoes cancelled or pushed to November; all Aramco cargoes for the last 10 days of September reported at risk",
+      "confidence": "MEDIUM",
+      "source": "Argus (cited by OilPrice.com, BOE Report, Türkiye Today, Greek City Times)",
+      "source_date": "2026-09-15",
+      "note": "Direct confirmation that the Petroline/Yanbu outage (disruption #6) is now cancelling, not just diversifying, Saudi term supply. Orlen is separately sourcing North Sea/US/West Africa replacement crude (see cargo_substitution #3)."
     }
   ],
   "change_log": [
@@ -2530,6 +2602,61 @@
       "detail": "Purchases had paused in July 2026 when discounts narrowed; headline-level report only, no volume/discount figures available.",
       "confidence": "LOW-MEDIUM",
       "source": "Deccan Herald (Sep 2026)"
+    },
+    {
+      "change_id": 5,
+      "timestamp": "2026-09-18T07:44:35Z",
+      "date": "2026-09-18",
+      "category": "Correction",
+      "scope": "Saudi Arabia — East-West Pipeline / Petroline",
+      "summary": "Corrected Petroline drone attack date from 13 Sep to 10-11 Sep 2026, with Pump Stations 8/9 damage detail",
+      "detail": "Multiple corroborating sources (Wikipedia, AP/PBS, Engineering News-Record, OilPrice.com) converge on the strike occurring 10-11 Sep 2026 and the shutdown being confirmed 11 Sep, not 13 Sep as previously recorded. Added damage specifics (Pump Stations 8 and 9, ~30-acre burn scar) and diverging repair-timeline estimates (days to months depending on source).",
+      "confidence": "HIGH",
+      "source": "Wikipedia: 2026 East-West Crude Oil Pipeline attack; AP via PBS NewsHour; Engineering News-Record"
+    },
+    {
+      "change_id": 6,
+      "timestamp": "2026-09-18T07:44:35Z",
+      "date": "2026-09-18",
+      "category": "Escalation",
+      "scope": "Saudi Arabia — Yanbu / Petroline",
+      "summary": "Aramco suspended Yanbu crude loadings outright (15 Sep) and cancelled/delayed European term cargoes",
+      "detail": "At least 3 European refiners' late-September cargoes cancelled or pushed to November; every Aramco cargo for the last 10 days of September reported at risk. Saudi Arabia is compensating by increasing loadings through the Strait of Hormuz, including ship-to-ship transfers near Sohar, Oman (~20 million barrels reportedly sold to Asian refiners this week), rather than restoring pipeline flow. Ras Tanura/Ju'aymah infrastructure status upgraded from Green to Amber to reflect this elevated utilisation.",
+      "confidence": "HIGH",
+      "source": "Bloomberg (14-16 Sep 2026); OilPrice.com (15-16 Sep 2026); Al Jazeera (17 Sep 2026); CNBC (15-17 Sep 2026)"
+    },
+    {
+      "change_id": 7,
+      "timestamp": "2026-09-18T07:44:35Z",
+      "date": "2026-09-18",
+      "category": "New tender data",
+      "scope": "Europe — PKN Orlen and other refiners",
+      "summary": "Added new weekly_flows row (flow #12) tracking total Saudi crude loadings, and a new tender confirming Orlen/European cargo cancellations",
+      "detail": "New weekly_flows row estimates total Saudi loadings fell from ~7.5 mb/d (Jan-Feb 2026) to ~2.1-2.3 mb/d (mid-Sep 2026), a single-source Al Jazeera analyst estimate flagged LOW-MEDIUM confidence. Separately, Argus-sourced reporting confirms Orlen and at least 2 other European refiners had cargoes cancelled/delayed to November; added as tender #3 and cargo_substitution #3 (North Sea/US/West Africa replacement sourcing).",
+      "confidence": "MEDIUM",
+      "source": "Al Jazeera (17 Sep 2026); Argus (via OilPrice.com, BOE Report, Türkiye Today)"
+    },
+    {
+      "change_id": 8,
+      "timestamp": "2026-09-18T07:44:35Z",
+      "date": "2026-09-18",
+      "category": "New disruption",
+      "scope": "Libya — Hamada-Zawiya pipeline / Hamada & Tahara fields",
+      "summary": "Added disruption #7: Petroleum Facilities Guard briefly shut Hamada-Zawiya valve and two fields, resolved within days",
+      "detail": "Guard demanded transfer from defense ministry to NOC control; NOC threatened force majeure. Operations resumed within days (by 15 Sep) with no lasting impact on Libya's multi-year-high production/export figure. Logged as resolved.",
+      "confidence": "MEDIUM",
+      "source": "OilPrice.com (15 Sep 2026); GV Wire (15 Sep 2026)"
+    },
+    {
+      "change_id": 9,
+      "timestamp": "2026-09-18T07:44:35Z",
+      "date": "2026-09-18",
+      "category": "Update",
+      "scope": "Strait of Hormuz crisis (disruption #1)",
+      "summary": "Updated Hormuz crisis with latest transit counts, failed Iran-Oman talks, and Brent price path",
+      "detail": "Kpler counted 7 transits on 10 Sep (down from 11); planned Iran-Oman-GCC meeting on a temporary transit solution postponed indefinitely as of 14 Sep; US narrowed tanker air-defence escort cover to two time slots/day. Brent moved $96.28 (6 Sep) to $104.61 (11 Sep, +8.7% week) to ~$108 (15 Sep, on Yanbu suspension) before easing as Saudi Arabia shifted volume through Hormuz.",
+      "confidence": "HIGH",
+      "source": "Al Jazeera (14, 17 Sep 2026); CNBC (16-17 Sep 2026)"
     }
   ]
 }
