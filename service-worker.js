@@ -5,7 +5,7 @@
    whatever was cached last). Bump CACHE_VERSION whenever index.html,
    manifest.json or the icons change so returning visitors pick up the
    update instead of a stale cached shell. */
-const CACHE_VERSION = 'gcf-shell-v2';
+const CACHE_VERSION = 'gcf-shell-v3-titanium';
 const SHELL_FILES = [
   './',
   './index.html',
