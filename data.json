@@ -4,7 +4,7 @@
     "week_ending": "2026-09-20",
     "cutoff": "09:00 Europe/Nicosia",
     "week_convention": "Weeks run Monday-Sunday; week_ending is always the Sunday, with data captured up to the 09:00 Europe/Nicosia (Cyprus time) cutoff that Sunday morning.",
-    "generated": "2026-09-18T07:44:35Z",
+    "generated": "2026-09-18T12:44:29Z",
     "note": "Built from free/public sources (EIA, IEA, OPEC, operator statements, Reuters/Al Jazeera/Bloomberg/OilPrice/Argus/Kpler-cited reporting) plus a seed route database. No live Kpler/Vortexa feed is connected in this build; flow figures are research snapshots, not real-time AIS-derived data. See each item's confidence tag and source."
   },
   "countries": [
@@ -2262,10 +2262,10 @@
       "change_mbd": null,
       "change_percent": null,
       "status": "Disrupted",
-      "event_explanation": "Ust-Luga (~700 kb/d capacity) hit by drones twice in three weeks (14 Aug, 1 Sep); Primorsk separately reported closed. No confirmed current throughput figure.",
+      "event_explanation": "Ust-Luga (~700 kb/d capacity) hit by drones twice in three weeks (14 Aug, 1 Sep); Primorsk (~1 mb/d) separately hit again on 12 Sep (two shadow-fleet tankers damaged, pumping station fire, shipments suspended), with the same strike also hitting pumping stations feeding Ust-Luga. No confirmed current throughput figure for either terminal.",
       "confidence": "MEDIUM",
-      "source": "The Moscow Times; MarineLink",
-      "source_date": "2026-09-01"
+      "source": "The Moscow Times; MarineLink; Kyiv Independent (12 Sep 2026)",
+      "source_date": "2026-09-12"
     },
     {
       "flow_id": 7,
@@ -2379,25 +2379,25 @@
       "expected_restart": "Unclear",
       "actual_restart": null,
       "status": "Disrupted / status unclear",
-      "description": "Ukrainian drone attack ignited a fire at Ust-Luga, Russia’s largest Baltic export terminal, on 1 Sept 2026 (52 drones intercepted by air defence over 4 hours; fire out by ~09:30 Moscow time). Second strike on this terminal in three weeks (previous: 14 Aug 2026). Source article does not confirm whether/when normal loading resumed.",
-      "source": "The Moscow Times (1 Sep 2026)",
+      "description": "Ukrainian drone attack ignited a fire at Ust-Luga, Russia’s largest Baltic export terminal, on 1 Sept 2026 (52 drones intercepted by air defence over 4 hours; fire out by ~09:30 Moscow time). Second strike on this terminal in three weeks (previous: 14 Aug 2026). Source article does not confirm whether/when normal loading resumed. Separately, Ukraine's SSU said the 12 Sep drone attack that hit Primorsk (disruption #3) also struck pumping stations feeding Ust-Luga; effect on Ust-Luga's own throughput not confirmed.",
+      "source": "The Moscow Times (1 Sep 2026); Kyiv Independent (12 Sep 2026)",
       "confidence": "MEDIUM"
     },
     {
       "disruption_id": 3,
-      "date": "2026-08-14",
+      "date": "2026-09-12",
       "country": "Russia",
       "asset": "Primorsk export terminal",
       "location": "Primorsk, Baltic Sea",
-      "event_type": "Drone strike",
-      "estimated_capacity_affected": "Not stated",
-      "actual_flow_affected": "Reported closed",
+      "event_type": "Repeated drone strikes",
+      "estimated_capacity_affected": "~1 mb/d (Baltic Pipeline System throughput via Primorsk)",
+      "actual_flow_affected": "Oil shipments suspended after 12 Sep attack; capacity effect since not confirmed",
       "start_date": "2026-08-14",
       "expected_restart": "Unclear",
       "actual_restart": null,
-      "status": "Reported closed",
-      "description": "Marine industry reporting indicates Primorsk remained closed after drone attacks even as Ust-Luga briefly restarted oil exports; exact reopening date not confirmed in source.",
-      "source": "MarineLink",
+      "status": "Disrupted — repeated strikes, shipments suspended (12 Sep)",
+      "description": "Marine industry reporting indicated Primorsk remained closed after mid-August drone attacks even as Ust-Luga briefly restarted oil exports; exact reopening date was not confirmed. Overnight on 12 Sep 2026, Ukraine carried out one of its largest drone attacks in months on Primorsk (Russia's largest Baltic oil terminal, part of the Baltic Pipeline System): two Russian shadow-fleet tankers (Kusto and Cai Yun, Seychelles-flagged) were damaged, with fires breaking out on one vessel and at a pumping station, forcing suspension of oil shipments. Ukraine's SSU said the same strikes also hit pumping stations feeding the Ust-Luga terminal (disruption #2). Russian officials reported 28 drones downed over Leningrad region and the fire extinguished with no casualties or leaks. No source yet confirms whether/when loading resumed after this strike.",
+      "source": "Kyiv Independent (12 Sep 2026); Ukrainska Pravda (12 Sep 2026); Hellenic Shipping News / S&P Global Commodity Insights (12 Sep 2026); MarineLink",
       "confidence": "MEDIUM"
     },
     {
@@ -2657,6 +2657,17 @@
       "detail": "Kpler counted 7 transits on 10 Sep (down from 11); planned Iran-Oman-GCC meeting on a temporary transit solution postponed indefinitely as of 14 Sep; US narrowed tanker air-defence escort cover to two time slots/day. Brent moved $96.28 (6 Sep) to $104.61 (11 Sep, +8.7% week) to ~$108 (15 Sep, on Yanbu suspension) before easing as Saudi Arabia shifted volume through Hormuz.",
       "confidence": "HIGH",
       "source": "Al Jazeera (14, 17 Sep 2026); CNBC (16-17 Sep 2026)"
+    },
+    {
+      "change_id": 10,
+      "timestamp": "2026-09-18T12:44:29Z",
+      "date": "2026-09-18",
+      "category": "Escalation",
+      "scope": "Russia — Primorsk / Ust-Luga (Baltic export terminals)",
+      "summary": "Added previously-uncaptured 12 Sep drone attack on Primorsk that also hit pumping stations feeding Ust-Luga",
+      "detail": "Overnight 12 Sep 2026, one of Ukraine's largest drone attacks in months damaged two Russian shadow-fleet tankers (Kusto, Cai Yun) at Primorsk, with fires at one vessel and a pumping station forcing suspension of oil shipments; the same strikes hit pumping stations feeding Ust-Luga. Russian officials reported 28 drones downed over Leningrad region, fire extinguished, no casualties/leaks. No source yet confirms whether/when loading resumed at either terminal. Updated disruption #2, #3 and weekly_flows #6 (Baltic export system) accordingly; Brent/Yanbu/Hormuz figures already captured in the prior run remain current and were re-verified against Bloomberg, Al Jazeera and CNBC (17-18 Sep 2026) with no material change.",
+      "confidence": "MEDIUM",
+      "source": "Kyiv Independent (12 Sep 2026); Ukrainska Pravda (12 Sep 2026); Hellenic Shipping News / S&P Global Commodity Insights (12 Sep 2026)"
     }
   ]
 }
