@@ -4,7 +4,7 @@
     "week_ending": "2026-09-27",
     "cutoff": "09:00 Europe/Nicosia",
     "week_convention": "Weeks run Monday-Sunday; week_ending is always the Sunday, with data captured up to the 09:00 Europe/Nicosia (Cyprus time) cutoff that Sunday morning.",
-    "generated": "2026-09-21T07:55:00Z",
+    "generated": "2026-09-21T08:31:33Z",
     "note": "Built from free/public sources (EIA, IEA, OPEC, operator statements, Reuters/Al Jazeera/Bloomberg/OilPrice/Argus/Kpler-cited reporting) plus a seed route database. No live Kpler/Vortexa feed is connected in this build; flow figures are research snapshots, not real-time AIS-derived data. See each item's confidence tag and source."
   },
   "countries": [
@@ -3164,7 +3164,7 @@
     },
     {
       "flow_id": 10,
-      "week_ending": "2026-09-13",
+      "week_ending": "2026-09-27",
       "region": "South America",
       "country": "Guyana",
       "route": "Stabroek block FPSOs",
@@ -3172,16 +3172,16 @@
       "destination_region": "Europe / US / Asia",
       "destination_country": null,
       "crude_grade": "Liza / Payara / Yellowtail",
-      "mbd": 0.58,
+      "mbd": 0.9,
       "cargo_count": null,
-      "previous_week_mbd": null,
-      "change_mbd": null,
-      "change_percent": null,
+      "previous_week_mbd": 0.58,
+      "change_mbd": 0.32,
+      "change_percent": 55.2,
       "status": "Rising",
-      "event_explanation": "~582 kb/d total exports (2024 baseline, output has continued growing with new FPSOs since); Europe took 66% of exports in 2024, rising to 75% (15 of 20 cargoes) by Jan 2025.",
+      "event_explanation": "Stale 2024/Jan-2025 baseline (~582 kb/d) replaced with 2026 figures: ExxonMobil reported a ~900 kb/d production milestone (Q1 2026 average ~914 kb/d), with government data showing ~888 kb/d lifted in late May 2026 (down 4% from ~924 kb/d at the start of that month); Exxon expects output to top 1 mb/d before end-2026 as the Uaru project (+250 kb/d) is commissioned. Destination mix has also shifted: Europe still receives the largest share (~60%) but Asia has grown fast — 24 cargoes in 2025 (13 in H2) versus zero in 2024 — alongside the US, Netherlands, Italy and Panama as top buyers. Production and export volumes not separately confirmed in these sources; treated as closely tracking here since Guyana has negligible domestic refining.",
       "confidence": "MEDIUM",
-      "source": "OilPrice.com; Argus Media",
-      "source_date": "2025-01"
+      "source": "ExxonMobil Guyana press releases; Argus Media (\"Viewpoint: Rising Guyanese crude flows open new markets\"); OilNOW; EIA",
+      "source_date": "2026-09"
     },
     {
       "flow_id": 11,
@@ -3723,6 +3723,17 @@
       "detail": "Replaced the previously unconfirmed (null mb/d) Venezuela flow figure with reported August 2026 trade-flow data: exports almost unchanged at ~1.17 mb/d (larger India/Europe flows offsetting lower US shipments), production ~1.145 mb/d (up from ~1.122 mb/d in July), and Chevron's own lifting easing slightly to ~286 kb/d (from ~293 kb/d in July). Also notes a 2 Sep 2026 Chevron-Venezuela interim government accord: a $7bn investment aiming to roughly double Chevron-operated output to ~600 kb/d over about five years from ~280 kb/d currently — a structural plan, not a current-flow change.",
       "confidence": "MEDIUM",
       "source": "BOE Report (1 Sep 2026); CNBC, The Hill (2 Sep 2026)"
+    },
+    {
+      "change_id": 18,
+      "timestamp": "2026-09-21T08:31:33Z",
+      "date": "2026-09-21",
+      "category": "Correction",
+      "scope": "Guyana — Stabroek block FPSOs",
+      "summary": "Replaced stale Jan-2025 baseline (~0.58 mb/d) in weekly_flows #10 with current 2026 output data (~0.90 mb/d and rising toward 1 mb/d)",
+      "detail": "weekly_flows #10 for Guyana still carried a Jan-2025-sourced ~582 kb/d figure despite output having grown substantially since. Updated to ExxonMobil's Q1 2026 average of ~914 kb/d and a ~888 kb/d lifting figure for late May 2026, noting Exxon's guidance that output should top 1 mb/d before end-2026 once the Uaru project (+250 kb/d) is commissioned. Also updated the destination-mix narrative: Europe still takes the largest share (~60%) but Asia has grown from zero cargoes in 2024 to 24 in 2025 (13 in H2).",
+      "confidence": "MEDIUM",
+      "source": "ExxonMobil Guyana press releases; Argus Media; OilNOW; EIA"
     }
   ]
 }
