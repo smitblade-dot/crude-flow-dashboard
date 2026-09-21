@@ -4,7 +4,7 @@
     "week_ending": "2026-09-27",
     "cutoff": "09:00 Europe/Nicosia",
     "week_convention": "Weeks run Monday-Sunday; week_ending is always the Sunday, with data captured up to the 09:00 Europe/Nicosia (Cyprus time) cutoff that Sunday morning.",
-    "generated": "2026-09-21T07:38:29Z",
+    "generated": "2026-09-21T07:55:00Z",
     "note": "Built from free/public sources (EIA, IEA, OPEC, operator statements, Reuters/Al Jazeera/Bloomberg/OilPrice/Argus/Kpler-cited reporting) plus a seed route database. No live Kpler/Vortexa feed is connected in this build; flow figures are research snapshots, not real-time AIS-derived data. See each item's confidence tag and source."
   },
   "countries": [
@@ -3185,7 +3185,7 @@
     },
     {
       "flow_id": 11,
-      "week_ending": "2026-09-13",
+      "week_ending": "2026-09-20",
       "region": "South America",
       "country": "Venezuela",
       "route": "Orinoco / José export system",
@@ -3193,16 +3193,16 @@
       "destination_region": "US / Asia",
       "destination_country": null,
       "crude_grade": "Merey / Orinoco blends",
-      "mbd": null,
+      "mbd": 1.17,
       "cargo_count": null,
       "previous_week_mbd": null,
       "change_mbd": null,
       "change_percent": null,
-      "status": "Rising (post-sanctions easing)",
-      "event_explanation": "Following Maduro’s removal from power (~Jan 2026) and OFAC licence changes, Chevron and other operators are reported resuming/expanding lifting programmes; no confirmed current mb/d figure.",
-      "confidence": "LOW-MEDIUM",
-      "source": "Morgan Lewis OFAC update; CNBC",
-      "source_date": "2026-01 to 2026-02"
+      "status": "Broadly flat — mix shifting toward India/Europe",
+      "event_explanation": "Venezuela's oil exports were almost unchanged in August 2026 at ~1.17 mb/d, with larger flows to India and Europe offsetting lower shipments to the US, per trade-flow data reported 1 Sep 2026. August crude production was ~1.145 mb/d, up from ~1.122 mb/d in July. Chevron's own lifting of Venezuelan crude eased slightly to ~286 kb/d in August from ~293 kb/d in July. Separately, on 2 Sep 2026 Chevron and Venezuela's interim government signed a $7bn investment accord targeting a roughly five-year path to ~600 kb/d of Chevron-operated production, versus ~280 kb/d currently — a structural expansion plan, not yet reflected in current flow.",
+      "confidence": "MEDIUM",
+      "source": "BOE Report (1 Sep 2026, trade-flow data); CNBC, The Hill (2 Sep 2026, Chevron-Venezuela accord)",
+      "source_date": "2026-09-02"
     },
     {
       "flow_id": 12,
@@ -3325,8 +3325,8 @@
       "expected_restart": "Firming up: Bloomberg (16 Sep 2026) reports Saudi Arabia is targeting restoration of roughly half of pipeline capacity within days, with full capacity in about six weeks — reconciling the earlier 'days' (Chris Wright) vs '5-6 weeks' (Reuters) estimates as partial vs full restoration respectively. Kpler (17 Sep 2026) separately estimates ~50% capacity for up to six weeks. No confirmed restart date from Saudi authorities as of 20 Sep 2026.",
       "actual_restart": null,
       "status": "Critical / ongoing — phased restart planned, workaround routes absorbing much of the impact, but term supply to at least some European buyers now fully cut for October",
-      "description": "Drone attack on 13 Sep 2026 hit the East-West Pipeline (Petroline) at multiple points near Riyadh and Medina, forcing a shutdown. Drones were traced to Maysan province, Iraq, launched by Iranian-aligned militants; Saudi Arabia subsequently removed the Maysan operations commander from his post in response. Petroline is Saudi Arabia's primary bypass route around the Strait of Hormuz (see disruption #1), carrying oil from the Eastern Province to the Red Sea export terminal at Yanbu — so this shutdown compounds the existing Hormuz crisis rather than offering relief from it, removing one of the few working bypass corridors. Satellite imagery reviewed by analysts (CNBC, 17 Sep 2026) shows damage across multiple pumping stations along the route, consistent with a genuine multi-week physical repair job rather than a purely precautionary shutdown. Saudi Arabia is instead absorbing much of the impact by pushing significantly more crude through the Gulf/Hormuz route itself, using US naval escort for short-haul transits and ship-to-ship transfers off Sohar, Oman, to reach long-haul vessels — Reuters reports ~60 million barrels sold for Sep-Oct loading via this route. Despite that workaround, Bloomberg (18 Sep 2026) reports Aramco has told at least two European refiners under term contracts they will get no crude at all in October — the clearest sign yet that some buyers cannot be made whole via the Hormuz/Sohar reroute alone, prompting customers like Poland's Orlen to scramble for North Sea, US and Kazakh replacement barrels (see tenders #1, cargo_substitution #4). Oil markets have nonetheless judged the overall outage 'less disruptive than feared' at the aggregate level (CNBC, 18 Sep 2026); Brent finished the week of 18 Sep roughly flat.",
-      "source": "Bloomberg (16 & 18 Sep 2026); CNBC (15, 17 & 18 Sep 2026); Al Jazeera (14 & 17 Sep 2026); AGBI (17 Sep 2026); BOE Report (16 Sep 2026); Kpler (17 Sep 2026); OilPrice.com (19 Sep 2026); Wikipedia: 2026 East-West Crude Oil Pipeline attack",
+      "description": "Drone attack on 13 Sep 2026 hit the East-West Pipeline (Petroline) at multiple points near Riyadh and Medina, forcing a shutdown. Drones were traced to Maysan province, Iraq, launched by Iranian-aligned militants; Saudi Arabia subsequently removed the Maysan operations commander from his post in response. Petroline is Saudi Arabia's primary bypass route around the Strait of Hormuz (see disruption #1), carrying oil from the Eastern Province to the Red Sea export terminal at Yanbu — so this shutdown compounds the existing Hormuz crisis rather than offering relief from it, removing one of the few working bypass corridors. Satellite imagery reviewed by analysts (CNBC, 17 Sep 2026) shows damage across multiple pumping stations along the route, consistent with a genuine multi-week physical repair job rather than a purely precautionary shutdown. Saudi Arabia is instead absorbing much of the impact by pushing significantly more crude through the Gulf/Hormuz route itself, using US naval escort for short-haul transits and ship-to-ship transfers off Sohar, Oman, to reach long-haul vessels — Reuters reports ~60 million barrels sold for Sep-Oct loading via this route. Despite that workaround, Bloomberg (18 Sep 2026) reports Aramco has told at least two European refiners under term contracts they will get no crude at all in October — the clearest sign yet that some buyers cannot be made whole via the Hormuz/Sohar reroute alone, prompting customers like Poland's Orlen to scramble for North Sea, US and Kazakh replacement barrels (see tenders #1, cargo_substitution #4). Oil markets have nonetheless judged the overall outage 'less disruptive than feared' at the aggregate level (CNBC, 18 Sep 2026); Brent finished the week of 18 Sep roughly flat. On 19 Sep 2026, Yemen's Houthi forces claimed missile, cruise-missile and drone attacks on “sensitive sites” in Riyadh and on Aramco facilities in Yanbu — the Red Sea terminal city the East-West Pipeline feeds — the first such strike claimed on the Saudi capital since fighting resumed in Yemen. Saudi-led coalition forces said the attacks were intercepted/thwarted; Aramco did not confirm damage and the claims are unverified. No confirmed impact on the pipeline restart timeline, but it adds a new direct-attack risk to the Yanbu terminal itself on top of the pipeline shutdown.",
+      "source": "Bloomberg (16 & 18 Sep 2026); CNBC (15, 17 & 18 Sep 2026); Al Jazeera (14 & 17 Sep 2026); AGBI (17 Sep 2026); BOE Report (16 Sep 2026); Kpler (17 Sep 2026); OilPrice.com (19 Sep 2026); Wikipedia: 2026 East-West Crude Oil Pipeline attack; Times of Israel, Al Jazeera, NPR, Euronews, Irish Times (19-20 Sep 2026)",
       "confidence": "HIGH"
     },
     {
@@ -3342,8 +3342,8 @@
       "expected_restart": "Not applicable — this is a territorial/military control change, not a temporary closure; no resolution timeline",
       "actual_restart": null,
       "status": "Critical / ongoing",
-      "description": "Iran-backed Houthi forces completed their takeover of Yemen's Red Sea coastline over the weekend of 11-13 Sep 2026, capturing the port city of Mocha and the strategic island of Mayyun (Perim), giving them effective control of the Bab al-Mandeb Strait — the southern gateway to the Red Sea and Suez/SUMED route, roughly 20km from the African coast. This opens a second major chokepoint front alongside the ongoing Strait of Hormuz crisis (disruption #1). It raises risk to Red Sea-adjacent routes including Egypt's Suez/SUMED system and Israel's Ashkelon-Eilat pipeline (both still shown Green/Normal in this dashboard — no confirmed direct disruption to their throughput has been reported yet, but both are flagged as new watch items). Historically, Houthi control of this area has driven major container shipping lines to reroute around the Cape of Good Hope rather than test the strait, even after stated assurances of safe passage; whether this recurs for crude tankers specifically is not yet confirmed by public reporting.",
-      "source": "Al Jazeera (11 & 13 Sep 2026); NBC News (13 Sep 2026); NPR (11-12 Sep 2026); Times of Israel (12 Sep 2026); Euronews (12 Sep 2026)",
+      "description": "Iran-backed Houthi forces completed their takeover of Yemen's Red Sea coastline over the weekend of 11-13 Sep 2026, capturing the port city of Mocha and the strategic island of Mayyun (Perim), giving them effective control of the Bab al-Mandeb Strait — the southern gateway to the Red Sea and Suez/SUMED route, roughly 20km from the African coast. This opens a second major chokepoint front alongside the ongoing Strait of Hormuz crisis (disruption #1). It raises risk to Red Sea-adjacent routes including Egypt's Suez/SUMED system and Israel's Ashkelon-Eilat pipeline (both still shown Green/Normal in this dashboard — no confirmed direct disruption to their throughput has been reported yet, but both are flagged as new watch items). Historically, Houthi control of this area has driven major container shipping lines to reroute around the Cape of Good Hope rather than test the strait, even after stated assurances of safe passage; whether this recurs for crude tankers specifically is not yet confirmed by public reporting. Escalating beyond the coastline/strait seizure, Houthi forces on 19 Sep 2026 also fired missiles and drones directly at Riyadh and claimed a separate strike on Aramco facilities in Yanbu (see disruption #6) — Saudi Arabia's first air-raid alert in the capital since fighting resumed in Yemen. Saudi coalition defences said the attacks were intercepted; no confirmed casualties or infrastructure damage. This marks the clearest sign yet that the Houthi threat is extending from chokepoint control toward direct attacks on Saudi mainland oil infrastructure.",
+      "source": "Al Jazeera (11 & 13 Sep 2026); NBC News (13 Sep 2026); NPR (11-12 Sep 2026); Times of Israel (12 Sep 2026); Euronews (12 Sep 2026); Times of Israel, Al Jazeera, NPR, Euronews, Irish Times, Manila Times (19-20 Sep 2026)",
       "confidence": "HIGH"
     },
     {
@@ -3701,6 +3701,28 @@
       "detail": "Indian Oil Corp purchased 1m bbl each of Libyan Sirte/Missla (from Mercuria, ~$23/bbl over October Brent — the highest of the four grades and reportedly a record Libyan premium since the Iran war began), Iraqi Basra Heavy (Trafigura, ~$14/bbl over Dubai), Angolan Cabinda (Glencore, ~$17/bbl) and Nigerian Ozbati (Glencore, ~$21/bbl), all for November 2026 delivery — illustrating buyers paying up for non-Gulf/non-Russian barrels amid the Hormuz/Petroline crisis.",
       "confidence": "MEDIUM",
       "source": "Libya Herald, bnreport.com (16 Sep 2026); Trends Africa (20 Sep 2026)"
+    },
+    {
+      "change_id": 16,
+      "timestamp": "2026-09-21T07:55:00Z",
+      "date": "2026-09-21",
+      "category": "Updated disruption",
+      "scope": "Saudi Arabia / Yemen — Riyadh and Yanbu (Petroline terminal)",
+      "summary": "Houthis claim first missile/drone strikes on Riyadh and on Aramco's Yanbu facility since fighting resumed; Saudi says intercepted, no confirmed damage",
+      "detail": "On 19 Sep 2026 Yemen's Houthi forces claimed ballistic/cruise-missile and drone strikes on “sensitive sites” in Riyadh and on Aramco facilities in Yanbu — the Red Sea terminal city that the East-West Pipeline (disruption #6) feeds, and the first such claimed strike on the Saudi capital since fighting resumed in Yemen. Saudi-led coalition defences said the attacks were intercepted; Aramco has not confirmed any damage and the Houthi damage claims are unverified. Updated disruption #6 and #7 to note this new direct-attack risk to Yanbu on top of the existing pipeline shutdown and chokepoint-seizure risk; no confirmed change to the Petroline restart timeline.",
+      "confidence": "MEDIUM",
+      "source": "Times of Israel, Al Jazeera, NPR, Euronews, Irish Times, Manila Times (19-20 Sep 2026)"
+    },
+    {
+      "change_id": 17,
+      "timestamp": "2026-09-21T07:55:00Z",
+      "date": "2026-09-21",
+      "category": "New data",
+      "scope": "Venezuela — Orinoco / José export system",
+      "summary": "First confirmed export/production figures for weekly_flows #11: ~1.17 mb/d exports and ~1.145 mb/d production in August 2026, plus a new $7bn Chevron expansion accord",
+      "detail": "Replaced the previously unconfirmed (null mb/d) Venezuela flow figure with reported August 2026 trade-flow data: exports almost unchanged at ~1.17 mb/d (larger India/Europe flows offsetting lower US shipments), production ~1.145 mb/d (up from ~1.122 mb/d in July), and Chevron's own lifting easing slightly to ~286 kb/d (from ~293 kb/d in July). Also notes a 2 Sep 2026 Chevron-Venezuela interim government accord: a $7bn investment aiming to roughly double Chevron-operated output to ~600 kb/d over about five years from ~280 kb/d currently — a structural plan, not a current-flow change.",
+      "confidence": "MEDIUM",
+      "source": "BOE Report (1 Sep 2026); CNBC, The Hill (2 Sep 2026)"
     }
   ]
 }
