@@ -4,7 +4,7 @@
     "week_ending": "2026-09-27",
     "cutoff": "09:00 Europe/Nicosia",
     "week_convention": "Weeks run Monday-Sunday; week_ending is always the Sunday, with data captured up to the 09:00 Europe/Nicosia (Cyprus time) cutoff that Sunday morning.",
-    "generated": "2026-09-21T08:31:33Z",
+    "generated": "2026-09-22T06:04:32Z",
     "note": "Built from free/public sources (EIA, IEA, OPEC, operator statements, Reuters/Al Jazeera/Bloomberg/OilPrice/Argus/Kpler-cited reporting) plus a seed route database. No live Kpler/Vortexa feed is connected in this build; flow figures are research snapshots, not real-time AIS-derived data. See each item's confidence tag and source."
   },
   "countries": [
@@ -841,9 +841,9 @@
       "destination_basin": "Europe / Mediterranean",
       "mode": "Pipeline + tanker",
       "capacity": "Variable",
-      "status": "Petroleum Facilities Guard shut Hamada-Zawiya pipeline valve 15 Sep 2026, halting Hamada/Tahara; Wafa/Al-Khamsa/El Feel on partial cuts with full shutdown threatened (see disruption #8)",
+      "status": "PFG valve closures continue: Hamada/Tahara halted since 15 Sep, and a separate 21 Sep valve closure on the Sharara-Zawiya line has cut Sharara output by ~200 kb/d to ~100-105 kb/d; NOC weighing force majeure on Zawiya loadings (see disruption #8)",
       "map_status": "Amber",
-      "watch_item": "PFG labour dispute — one-week deadline, NOC weighing force majeure",
+      "watch_item": "PFG labour dispute now confirmed cutting Sharara-fed Zawiya throughput; watch for a formal NOC force majeure declaration",
       "latitude": 32.72,
       "longitude": 12.4,
       "origin_lat": 27.5,
@@ -2374,10 +2374,10 @@
       "destination_terminal": "Domestic gathering / feeds export system",
       "destination_basin": "Domestic gathering / feeds export system",
       "mode": "Upstream production",
-      "capacity": "~1.2–1.4 mb/d, but volatile — recurring blockades and force majeure declarations",
-      "status": "Volatile — history of sudden shut-ins tied to political/security disputes",
-      "map_status": "Amber",
-      "watch_item": "Headline capacity is high but actual flow swings sharply with each blockade; treat any single figure as a snapshot.",
+      "capacity": "~1.2-1.4 mb/d combined (Sharara/El Feel/Waha), but volatile - Sharara itself (~290-300 kb/d capacity) currently running at only ~100-105 kb/d after a 21 Sep 2026 valve closure",
+      "status": "Volatile - Sharara output confirmed down ~200 kb/d after a 21 Sep 2026 armed-group valve closure on the Sharara-Zawiya pipeline; NOC weighing force majeure (see disruption #8)",
+      "map_status": "Red",
+      "watch_item": "Headline capacity is high but actual flow swings sharply with each blockade; Sharara is mid-disruption as of this snapshot, not at capacity.",
       "latitude": 27.5,
       "longitude": 17.5,
       "origin_lat": null,
@@ -3353,15 +3353,15 @@
       "asset": "Hamada-Zawiya pipeline / Western fields",
       "location": "Hamada and Tahara oilfields and a pumping station (Western Libya); Wafa, Al-Khamsa, El Feel and Sharara threatened",
       "event_type": "Security-force pipeline valve closure / labour dispute",
-      "estimated_capacity_affected": "Hamada and Tahara fields plus a pumping station fully halted; Wafa, Al-Khamsa and El Feel put on a one-week partial cut from 15 Sep; Sharara (Libya's largest field, historically ~300 kb/d) named as one of seven fields facing complete closure if the dispute isn't resolved — no official combined bpd figure disclosed",
-      "actual_flow_affected": "Not quantified by NOC or wire sources yet; Libya's national output (~1.4-1.5 mb/d per July 2026 NOC reporting, see weekly_flows #8) not yet confirmed reduced",
+      "estimated_capacity_affected": "Sharara field (capacity ~290-300 kb/d) hit directly; Hamada and Tahara fields plus a pumping station fully halted; Wafa, Al-Khamsa and El Feel put on a partial cut from 15 Sep, with seven fields named as facing complete closure if the dispute isn't resolved",
+      "actual_flow_affected": "Confirmed by NOC: a separate armed group closed valve No. 7 on the Sharara-Zawiya pipeline (operated by Akakus Oil Operations Company) on 21 Sep 2026, cutting Sharara output by roughly 200 kb/d to about 100-105 kb/d (Reuters, 21 Sep 2026) - NOC technical teams have been unable to reach valves No. 6/7 to fix it and said appeals to the local Petroleum Facilities Guard branch yielded no results",
       "start_date": "2026-09-15",
-      "expected_restart": "Petroleum Facilities Guard set a one-week partial-cut window from 15 Sep 2026 (i.e. to ~22 Sep), threatening a full shutdown of seven fields after that if demands aren't met; no resolution confirmed as of 21 Sep 2026",
+      "expected_restart": "No resolution confirmed as of 22 Sep 2026; NOC has warned it may declare force majeure on Sharara crude loadings at Zawiya if the valve closure persists, but had not formally done so as of the latest reporting",
       "actual_restart": null,
-      "status": "Ongoing — partial cuts in effect, full shutdown of additional fields threatened",
-      "description": "Members of Libya's Petroleum Facilities Guard (PFG), a state-affiliated security force currently under the Defense Ministry, closed a valve on the main Hamada-Zawiya crude pipeline on 15 Sep 2026, halting production completely at the Hamada and Tahara oilfields and a pumping station. NOC called the closure illegal and said it may declare force majeure if the valve stays shut or if other fields see similar forced shutdowns; as of the latest reporting no force majeure had actually been declared. The PFG is demanding to be transferred financially and administratively from the Defense Ministry to NOC, with a set timetable for the move, and announced a one-week partial production cut at Wafa, Al-Khamsa and El Feel starting 15 Sep, threatening complete closure of these plus other fields (reporting names seven fields total including Sharara) if its demands aren't met within that week. This is a recurring pattern of PFG/local-group leverage over Libyan oil infrastructure (echoes 2019/2024 Sharara shutdowns) rather than a new type of risk, but it lands directly on Libya's Zawiya/Mellitah export route (weekly_flows #8, infrastructure #33) at a moment when global buyers are already scrambling for non-Gulf/non-Russian barrels (see tenders #3-6, cargo_substitution #4).",
-      "source": "OilPrice.com (15 Sep 2026); Arab News (15 Sep 2026); The Media Line (15 Sep 2026); Libya Herald (16 Sep 2026); Daily Sabah (15 Sep 2026); Energy Intelligence (15 Sep 2026)",
-      "confidence": "MEDIUM"
+      "status": "Escalating - Sharara output confirmed down ~200 kb/d after a second, separate valve closure; NOC warning of force majeure",
+      "description": "Members of Libya's Petroleum Facilities Guard (PFG), a state-affiliated security force currently under the Defense Ministry, closed a valve on the main Hamada-Zawiya crude pipeline on 15 Sep 2026, halting production completely at the Hamada and Tahara oilfields and a pumping station. NOC called the closure illegal and said it may declare force majeure if the valve stays shut or if other fields see similar forced shutdowns. The PFG is demanding to be transferred financially and administratively from the Defense Ministry to NOC, with a set timetable for the move, and announced a partial production cut at Wafa, Al-Khamsa and El Feel starting 15 Sep, threatening complete closure of these plus other fields (reporting names seven fields total including Sharara) if its demands aren't met. That threat has now materialised directly at Sharara itself: NOC confirmed on 21-22 Sep 2026 that an armed group shut valve No. 7 on the separate Sharara-Zawiya pipeline (operated by Akakus Oil Operations Company), causing a pressure buildup and cutting Sharara's output by ~200 kb/d to roughly 100-105 kb/d, out of a normal ~290-300 kb/d capacity - one of Libya's largest fields, accounting for roughly a quarter of national production. NOC said its technical teams could not reach the valves to fix the problem and that appeals to the local PFG branch went unanswered; it is weighing a formal force majeure declaration on Sharara crude loadings at Zawiya. This is a recurring pattern of PFG/local-group leverage over Libyan oil infrastructure (echoes 2019/2024 Sharara shutdowns) rather than a new type of risk, but it now lands as a confirmed, quantified output loss on Libya's Zawiya/Mellitah export route (weekly_flows #8, infrastructure #33) at a moment when global buyers are already scrambling for non-Gulf/non-Russian barrels (see tenders #3-6, cargo_substitution #4).",
+      "source": "OilPrice.com (15 Sep 2026); Arab News (15 Sep 2026); The Media Line (15 Sep 2026); Libya Herald (16 Sep 2026); Daily Sabah (15 Sep 2026); Energy Intelligence (15 Sep 2026); Reuters via TASS (21 Sep 2026); Xinhua (22 Sep 2026); Eurasia Review (22 Sep 2026)",
+      "confidence": "HIGH"
     }
   ],
   "cargo_substitution": [
@@ -3734,6 +3734,17 @@
       "detail": "weekly_flows #10 for Guyana still carried a Jan-2025-sourced ~582 kb/d figure despite output having grown substantially since. Updated to ExxonMobil's Q1 2026 average of ~914 kb/d and a ~888 kb/d lifting figure for late May 2026, noting Exxon's guidance that output should top 1 mb/d before end-2026 once the Uaru project (+250 kb/d) is commissioned. Also updated the destination-mix narrative: Europe still takes the largest share (~60%) but Asia has grown from zero cargoes in 2024 to 24 in 2025 (13 in H2).",
       "confidence": "MEDIUM",
       "source": "ExxonMobil Guyana press releases; Argus Media; OilNOW; EIA"
+    },
+    {
+      "change_id": 19,
+      "timestamp": "2026-09-22T06:04:32Z",
+      "date": "2026-09-22",
+      "category": "Updated disruption",
+      "scope": "Libya - Sharara field / Zawiya export terminal",
+      "summary": "NOC confirms Sharara output down ~200 kb/d (to ~100-105 kb/d) after a second, separate valve closure on the Sharara-Zawiya pipeline; NOC warning of force majeure",
+      "detail": "Escalation beyond the 15 Sep PFG labour-dispute cuts already tracked in disruption #8: NOC confirmed on 21-22 Sep 2026 that an armed group shut valve No. 7 on the Sharara-Zawiya pipeline (Akakus Oil Operations Company), cutting Sharara's output from its ~290-300 kb/d capacity to roughly 100-105 kb/d. NOC said technical teams could not reach the valves and appeals to the local PFG branch were unanswered; NOC is now weighing formal force majeure on Zawiya crude loadings. Updated disruption #8, infrastructure #33 (Zawiya/Mellitah) and #87 (Sharara/El Feel/Waha production row, map_status raised to Red to reflect the confirmed ~65% output cut).",
+      "confidence": "HIGH",
+      "source": "Reuters via TASS (21 Sep 2026); Xinhua (22 Sep 2026); Eurasia Review (22 Sep 2026)"
     }
   ]
 }
