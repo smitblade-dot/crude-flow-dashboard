@@ -4,7 +4,7 @@
     "week_ending": "2026-10-11",
     "cutoff": "09:00 Europe/Nicosia",
     "week_convention": "Weeks run Monday-Sunday; week_ending is always the Sunday, with data captured up to the 09:00 Europe/Nicosia (Cyprus time) cutoff that Sunday morning.",
-    "generated": "2026-10-07T06:12:00Z",
+    "generated": "2026-10-08T06:08:00Z",
     "note": "Built from free/public sources (EIA, IEA, OPEC, operator statements, Reuters/Al Jazeera/Bloomberg/OilPrice/Argus/Kpler-cited reporting) plus a seed route database. No live Kpler/Vortexa feed is connected in this build; flow figures are research snapshots, not real-time AIS-derived data. See each item's confidence tag and source."
   },
   "countries": [
